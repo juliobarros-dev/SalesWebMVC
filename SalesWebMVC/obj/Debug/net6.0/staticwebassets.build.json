@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l1a2U/mhf37u5clO5HX9dAaVDvYUwNq3pewcpz1JJiI=",
+  "Hash": "KMGQwaWPscyO8z7PfRiR9yaOyLO3loHAflQUon+KIw0=",
   "Source": "SalesWebMVC",
   "BasePath": "_content/SalesWebMVC",
   "Mode": "Default",
@@ -238,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\julio.nascimento\\Desktop\\Curso C# Completo\\Projeto Final\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css",
+      "SourceId": "SalesWebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\julio.nascimento\\Desktop\\Curso C# Completo\\Projeto Final\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC\\wwwroot\\",
+      "BasePath": "_content/SalesWebMVC",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-flatly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-flatly.css"
+    },
+    {
       "Identity": "C:\\Users\\julio.nascimento\\Desktop\\Curso C# Completo\\Projeto Final\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "SalesWebMVC",
       "SourceType": "Discovered",
@@ -372,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\julio.nascimento\\Desktop\\Curso C# Completo\\Projeto Final\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-pulse.css",
+      "SourceId": "SalesWebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\julio.nascimento\\Desktop\\Curso C# Completo\\Projeto Final\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC\\wwwroot\\",
+      "BasePath": "_content/SalesWebMVC",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-pulse.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-pulse.css"
     },
     {
       "Identity": "C:\\Users\\julio.nascimento\\Desktop\\Curso C# Completo\\Projeto Final\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
