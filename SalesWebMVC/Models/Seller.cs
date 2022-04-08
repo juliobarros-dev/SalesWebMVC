@@ -11,7 +11,6 @@ namespace SalesWebMVC.Models
     [MinLength(3)]
     [MaxLength(50)]
     public string Name { get; set; }
-
     public string Email { get; set; }
 
     [DataType(DataType.Date)]
