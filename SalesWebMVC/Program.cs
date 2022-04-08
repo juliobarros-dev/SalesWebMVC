@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
+using SalesWebMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ MySqlServerVersion serverVersion = new(ServerVersion.AutoDetect(connectionString
 
 builder.Services.AddDbContext<SalesWebMVCContext>(options =>
     options.UseMySql(connectionString, serverVersion));
+
+builder.Services.AddScoped<SellerService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

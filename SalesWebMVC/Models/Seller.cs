@@ -1,13 +1,24 @@
 ﻿#nullable disable
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+
 namespace SalesWebMVC.Models
 {
   public class Seller
   {
     public int Id { get; set; }
+    [Required(ErrorMessage = "Mensagem")]
+    [MinLength(3)]
+    [MaxLength(50)]
     public string Name { get; set; }
+
     public string Email { get; set; }
+
+    [DataType(DataType.Date)]
+    [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
     public DateTime BirthDate { get; set; }
-    public double BaseSalery { get; set; }
+    [DataType(DataType.Currency)]
+    public double BaseSalary { get; set; }
     public Department Department { get; set; }
     public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
@@ -21,7 +32,7 @@ namespace SalesWebMVC.Models
       Name = name;
       Email = email;
       BirthDate = birthDate;
-      BaseSalery = baseSalery;
+      BaseSalary = baseSalery;
       Department = department;
     }
 
