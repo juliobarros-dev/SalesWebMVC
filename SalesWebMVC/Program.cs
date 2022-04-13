@@ -1,8 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Services;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
+var enUS = new CultureInfo("en-US");
+var localizationOptions = new RequestLocalizationOptions
+{
+  DefaultRequestCulture = new RequestCulture(enUS),
+  SupportedCultures = new List<CultureInfo> { enUS },
+  SupportedUICultures = new List<CultureInfo> { enUS },
+};
 
 var connectionString = builder.Configuration.GetConnectionString("SalesWebMVCContext");
 MySqlServerVersion serverVersion = new(ServerVersion.AutoDetect(connectionString));
@@ -17,6 +26,8 @@ builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+app.UseRequestLocalization(localizationOptions);
 
 // Seeding database
 // Documentation: https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-6.0&tabs=visual-studio
