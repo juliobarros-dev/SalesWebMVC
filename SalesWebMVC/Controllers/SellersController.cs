@@ -36,6 +36,7 @@ namespace SalesWebMVC.Controllers
       _sellerService.Insert(seller);
       return RedirectToAction(nameof(Index));
     }
+
     [HttpGet]
     public IActionResult Delete(int? id)
     {
@@ -54,6 +55,13 @@ namespace SalesWebMVC.Controllers
     {
       _sellerService.Remove(id);
       return RedirectToAction(nameof(Index));
+    }
+
+    [HttpGet]
+    public IActionResult Details(int id)
+    {
+      var seller = _sellerService.FindById(id);
+      return View(seller);
     }
   }
 }
