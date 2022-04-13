@@ -7,9 +7,6 @@ namespace SalesWebMVC.Models
   public class Seller
   {
     public int Id { get; set; }
-    [Required(ErrorMessage = "Mensagem")]
-    [MinLength(3)]
-    [MaxLength(50)]
     public string Name { get; set; }
     public string Email { get; set; }
 
@@ -19,6 +16,7 @@ namespace SalesWebMVC.Models
     [DataType(DataType.Currency)]
     public double BaseSalary { get; set; }
     public Department Department { get; set; }
+    public int DepartmentId { get; set; }
     public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
     public Seller()

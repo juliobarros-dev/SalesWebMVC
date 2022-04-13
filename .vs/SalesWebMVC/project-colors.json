@@ -5,6 +5,11 @@
       "ProjectGuid": "30c93ad6-f0f9-4636-bf5c-bd7266157447",
       "DisplayName": "SalesWebMVC",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

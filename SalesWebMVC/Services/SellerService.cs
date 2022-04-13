@@ -1,4 +1,5 @@
-﻿using SalesWebMVC.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SalesWebMVC.Data;
 using SalesWebMVC.Models;
 
 namespace SalesWebMVC.Services
@@ -14,7 +15,10 @@ namespace SalesWebMVC.Services
 
     public List<Seller> FindAll()
     {
-      return _context.Seller.ToList();
+      return _context.Seller
+        .Include(x => x.Department)
+        .OrderBy(x => x.Name).ThenBy(x => x.Department.Name)
+        .ToList();
     }
 
     public void Insert(Seller seller)
