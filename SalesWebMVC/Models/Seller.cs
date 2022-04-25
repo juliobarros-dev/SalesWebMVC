@@ -7,19 +7,24 @@ namespace SalesWebMVC.Models
   public class Seller
   {
     public int Id { get; set; }
+    [Required(ErrorMessage = "{0} required.")]
     public string Name { get; set; }
     [Display(Name = "E-mail")]
     [DataType(DataType.EmailAddress)]
+    [Required(ErrorMessage = "{0} required.")]
     public string Email { get; set; }
 
     [DataType(DataType.Date)]
     [Display(Name = "Birth Date")]
     [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
+    [Required(ErrorMessage = "{0} required.")]
     public DateTime BirthDate { get; set; }
     [DataType(DataType.Currency)]
     [Display(Name = "Base Salary")]
+    [Required(ErrorMessage = "{0} required.")]
     public double BaseSalary { get; set; }
     public Department Department { get; set; }
+    [Required(ErrorMessage = "{0} required.")]
     public int DepartmentId { get; set; }
     public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
